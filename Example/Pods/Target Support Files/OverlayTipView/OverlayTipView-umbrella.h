@@ -10,8 +10,8 @@
 #endif
 #endif
 
-#import "OTSizeFitLabel.h"
 #import "OTLoadingLabel.h"
+#import "OTSizeFitLabel.h"
 #import "OTTipView.h"
 #import "UIImage+Sugar.h"
 #import "UIView+StaticWidthTips.h"

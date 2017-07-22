@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'OverlayTipView'
-  s.version          = '0.1.0'
+  s.version          = '0.1.2'
   s.summary          = '浮层提示工具类'
   s.description      = <<-DESC
                         浮层提示工具类, 设计为UIView的扩展
@@ -18,8 +18,8 @@ Pod::Spec.new do |s|
   s.author           = { 'liuzhen' => 'lazy66@me.com' }
   s.source           = { :git => 'https://git.oschina.net/leeszi/OverlayTipView.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
-  s.source_files = 'OverlayTipView/Classes/**/*'
-  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.source_files = 'OverlayTipView/**/*'
+  s.public_header_files = 'OverlayTipView/**/*.h'
   s.frameworks = 'UIKit'
   s.dependency 'ReactiveCocoa', '~> 2.5'
 end
