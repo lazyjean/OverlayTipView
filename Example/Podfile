@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'OverlayTipView_Example' do
+  pod 'OverlayTipView', :path => '../'
+
+  target 'OverlayTipView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

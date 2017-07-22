@@ -1,0 +1,16 @@
+PODS:
+  - OverlayTipView (0.1.0)
+
+DEPENDENCIES:
+  - OverlayTipView (from `../`)
+
+EXTERNAL SOURCES:
+  OverlayTipView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  OverlayTipView: 5e90d1be8497c439639b6219e09930f4fd2eed59
+
+PODFILE CHECKSUM: b7734542881443e85203c59e166bd72ee349d405
+
+COCOAPODS: 1.2.1
