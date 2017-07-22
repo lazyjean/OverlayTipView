@@ -1,5 +1,13 @@
 PODS:
-  - OverlayTipView (0.1.0)
+  - OverlayTipView (0.1.0):
+    - ReactiveCocoa (~> 2.5)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
 
 DEPENDENCIES:
   - OverlayTipView (from `../`)
@@ -9,8 +17,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  OverlayTipView: 5e90d1be8497c439639b6219e09930f4fd2eed59
+  OverlayTipView: f4f6358d04225b391fb121a4e1c923ff55287b41
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
 
-PODFILE CHECKSUM: b7734542881443e85203c59e166bd72ee349d405
+PODFILE CHECKSUM: af0625ad6b57572cc07b6ee775484fc9157881fe
 
 COCOAPODS: 1.2.1

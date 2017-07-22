@@ -2,16 +2,16 @@
 //  UIView+Tips.h
 //  
 //
-//  Created by Jean Liu on 1/10/13.
+//  Created by liuzhen on 1/10/13.
 //  Copyright (c) . All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "TWTipView.h"
+#import "OTTipView.h"
 
 @interface UIView (Tips)
 
-@property (nonatomic, readonly) TWTipView *tipView;
+@property (nonatomic, readonly) OTTipView *tipView;
 
 - (void)showOverlayTip:(NSString *)tip;
 - (void)showOverlayLoading:(NSString *)tip;

@@ -2,7 +2,7 @@
 //  UIView+StaticWidthTips.h
 //  
 //
-//  Created by Jean Liu on 1/10/13.
+//  Created by liuzhen on 1/10/13.
 //  Copyright (c) . All rights reserved.
 //
 

@@ -2,8 +2,8 @@
 //  ZAppDelegate.h
 //  OverlayTipView
 //
-//  Created by 刘真 on 07/22/2017.
-//  Copyright (c) 2017 刘真. All rights reserved.
+//  Created by liuzhen on 07/22/2017.
+//  Copyright (c) 2017 liuzhen. All rights reserved.
 //
 
 @import UIKit;

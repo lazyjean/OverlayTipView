@@ -1,11 +1,6 @@
 use_frameworks!
+platform :ios, '8.0'
 
 target 'OverlayTipView_Example' do
   pod 'OverlayTipView', :path => '../'
-
-  target 'OverlayTipView_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end

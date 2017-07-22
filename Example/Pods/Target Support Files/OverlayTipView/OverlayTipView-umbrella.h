@@ -10,6 +10,12 @@
 #endif
 #endif
 
+#import "OTSizeFitLabel.h"
+#import "OTLoadingLabel.h"
+#import "OTTipView.h"
+#import "UIImage+Sugar.h"
+#import "UIView+StaticWidthTips.h"
+#import "UIView+Tips.h"
 
 FOUNDATION_EXPORT double OverlayTipViewVersionNumber;
 FOUNDATION_EXPORT const unsigned char OverlayTipViewVersionString[];

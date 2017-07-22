@@ -2,7 +2,7 @@
 //  UIView+Tips.m
 //  
 //
-//  Created by Jean Liu on 1/10/13.
+//  Created by liuzhen on 1/10/13.
 //  Copyright (c) . All rights reserved.
 //
 
@@ -16,11 +16,11 @@ static char TipViewKey;
 @dynamic tipView;
 
 #pragma mark - getter and setter methods.
-- (TWTipView *)tipView {
+- (OTTipView *)tipView {
     return objc_getAssociatedObject(self, &TipViewKey);
 }
 
-- (void)setTipView:(TWTipView *)tipView {
+- (void)setTipView:(OTTipView *)tipView {
     objc_setAssociatedObject(self, &TipViewKey, tipView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
@@ -40,7 +40,7 @@ static char TipViewKey;
         [self.tipView prepareForReuse];
     }
     else {
-        self.tipView = [[TWTipView alloc] initWithFrame:self.bounds];
+        self.tipView = [[OTTipView alloc] initWithFrame:self.bounds];
         self.tipView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         [self addSubview:self.tipView];
     }
@@ -58,7 +58,7 @@ static char TipViewKey;
         [self.tipView prepareForReuse];
     }
     else {
-        self.tipView = [[TWTipView alloc] initWithFrame:self.bounds];
+        self.tipView = [[OTTipView alloc] initWithFrame:self.bounds];
         self.tipView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         [self addSubview:self.tipView];
     }

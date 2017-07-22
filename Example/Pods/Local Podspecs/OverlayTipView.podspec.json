@@ -1,9 +1,9 @@
 {
   "name": "OverlayTipView",
   "version": "0.1.0",
-  "summary": "A short description of OverlayTipView.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/刘真/OverlayTipView",
+  "summary": "浮层提示工具类",
+  "description": "浮层提示工具类, 设计为UIView的扩展",
+  "homepage": "http://git.oschina.net/leeszi/OverlayTipView",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,18 @@
     "刘真": "lazy66@me.com"
   },
   "source": {
-    "git": "https://github.com/刘真/OverlayTipView.git",
+    "git": "https://git.oschina.net/leeszi/OverlayTipView.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "OverlayTipView/Classes/**/*"
+  "source_files": "OverlayTipView/Classes/**/*",
+  "public_header_files": "Pod/Classes/**/*.h",
+  "frameworks": "UIKit",
+  "dependencies": {
+    "ReactiveCocoa": [
+      "~> 2.5"
+    ]
+  }
 }
