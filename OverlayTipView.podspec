@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'OverlayTipView'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = '浮层提示工具类'
   s.description      = <<-DESC
                         浮层提示工具类, 设计为UIView的扩展

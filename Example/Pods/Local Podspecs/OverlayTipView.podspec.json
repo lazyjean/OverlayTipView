@@ -1,6 +1,6 @@
 {
   "name": "OverlayTipView",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "summary": "浮层提示工具类",
   "description": "浮层提示工具类, 设计为UIView的扩展",
   "homepage": "http://git.oschina.net/leeszi/OverlayTipView",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://git.oschina.net/leeszi/OverlayTipView.git",
-    "tag": "0.1.2"
+    "tag": "0.1.3"
   },
   "platforms": {
     "ios": "8.0"

@@ -49,7 +49,7 @@ static char kAssociatedObjectKey_footerView;
     }
     [self showOverlayTip:tip image:image];
     
-    self.tipView.frame = self.bounds;
+    self.tipView.frame = CGRectMake(0, 0, CGRectGetWidth(self.bounds), CGRectGetHeight(self.bounds));
 
     //针对表格优化tip的位置 
     if ([self isKindOfClass:[UITableView class]]) {
@@ -80,7 +80,7 @@ static char kAssociatedObjectKey_footerView;
     }
     [self showOverlayTip:tip image:image];
 
-    self.tipView.frame = frame;
+    self.tipView.frame = CGRectMake(0, 0, CGRectGetWidth(self.bounds), CGRectGetHeight(self.bounds));
 
     //针对表格优化tip的位置
     if ([self isKindOfClass:[UITableView class]]) {
@@ -95,7 +95,7 @@ static char kAssociatedObjectKey_footerView;
 
 - (void)showLoading:(NSString *)loadingText {
     [self showOverlayLoading:loadingText];
-    self.tipView.frame = self.bounds;
+    self.tipView.frame = self.tipView.frame = CGRectMake(0, 0, CGRectGetWidth(self.bounds), CGRectGetHeight(self.bounds));;
     self.tipView.backgroundColor = self.backgroundColor;
     
     //针对表格优化tip的位置
@@ -111,7 +111,7 @@ static char kAssociatedObjectKey_footerView;
 
 - (void)showFullScreenLoading:(NSString *)loadingText {
     [self showOverlayLoading:loadingText];
-    self.tipView.frame = self.bounds;
+    self.tipView.frame = self.tipView.frame = CGRectMake(0, 0, CGRectGetWidth(self.bounds), CGRectGetHeight(self.bounds));;
     self.tipView.backgroundColor = self.backgroundColor;    
     self.tipView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 }
