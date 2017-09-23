@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "OTSizeFitLabel.h"
-//#import <ReactiveCocoa/ReactiveCocoa.h>
 
 @interface OTTipView : UIView
 

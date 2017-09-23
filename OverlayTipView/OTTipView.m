@@ -10,41 +10,33 @@
 #import "OTLoadingLabel.h"
 #import "UIImage+Sugar.h"
 
-@import ReactiveCocoa;
-
 @interface OTTipView ()
-
 @property (nonatomic, strong) OTSizeFitLabel *tipLabel;
 @property (nonatomic, strong) OTSizeFitLabel *subLabel;
 @property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, strong) OTLoadingLabel *loadingLabel;
-
 @property (nonatomic, strong) UIButton *actionButton;
-
+@property (nonatomic, copy) void (^actionHandler)(void);
 @end
 
 @implementation OTTipView
 
-- (id)initWithFrame:(CGRect)frame
-{
+- (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
-    if (self)
-    {
+    if (self) {
         
     }
     return self;
 }
 
 #pragma mark - getter and setter
-- (void)setActionTitle:(NSString *)title handler:(void (^)(void))handler
-{
-    if (title && handler)
-    {
+- (void)setActionTitle:(NSString *)title handler:(void (^)(void))handler {
+
+    if (title && handler) {
+        
         self.actionButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [[self.actionButton rac_signalForControlEvents:UIControlEventTouchUpInside]
-         subscribeNext:^(id x) {
-             handler();
-         }];
+        [self.actionButton addTarget:self action:@selector(action:) forControlEvents:UIControlEventTouchUpInside];
+        self.actionHandler = handler;
         
         //设置按钮信息
         self.actionButton.titleLabel.font = [UIFont systemFontOfSize:15];
@@ -55,10 +47,15 @@
         [self.actionButton sizeToFit];
         [self addSubview:self.actionButton];
     }
-    else
-    {
+    else {
         self.actionButton ? [self.actionButton removeFromSuperview] : 0;
         self.actionButton = nil;
+    }
+}
+
+- (void)action:(id)sender {
+    if (self.actionHandler) {
+        self.actionHandler();
     }
 }
 

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'OverlayTipView'
-  s.version          = '0.1.3'
+  s.version          = '0.2.0'
   s.summary          = '浮层提示工具类'
   s.description      = <<-DESC
                         浮层提示工具类, 设计为UIView的扩展
@@ -21,5 +21,4 @@ Pod::Spec.new do |s|
   s.source_files = 'OverlayTipView/**/*'
   s.public_header_files = 'OverlayTipView/**/*.h'
   s.frameworks = 'UIKit'
-  s.dependency 'ReactiveCocoa', '~> 2.5'
 end
